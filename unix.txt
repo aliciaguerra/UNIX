@@ -1,0 +1,60 @@
+What is UNIX?
+It is a portable operating system that is designed for both efficient multi-tasking and multi-user functions.  Its portability allows it to run on different hardware platforms. It was written in C and lets user do processing under control shell.
+
+What are filters?
+The term filter is often used to refer to any program that can take input from standard input, perform an operation on that input, and write the results to standard output. A filter is also any program that can be used between two other programs in a pipeline.
+
+What is a typical syntax being followed when issuing commands in shell?
+Typical command syntax under the UNIX shell follows the format:
+Command [-argument] [-argument] [-argument] [file]
+
+Is there a way to erase all the files in the current directory, including all its subdirectories, in only one command?
+Yes, that is possible, Use “rm –r *” for this purpose. The rm command is for deleting files. The –r option will erase directories and subdirectories, including files within. The asterisk represents all entries.
+
+What is the chief difference between the –v and –x option s to set?
+The –v option echoes each command before arguments and variables have been substituted for; the –x option echoes the commands after substitution has taken place.
+
+What is kernel?
+Kernel is the UNIX operating system. It is the master program that controls the computer’s resources, allotting them to different users to different tasks. However, the kernel doesn’t deal directly with a user. Instead, it starts up a separate, interactive program, called a shell, for each user when he/she logs on.
+
+What is shell?
+A shell acts as an interface between the user and the system. As a command interpreter, the shell takes commands and sets them up for execution.
+
+What are the key features of the Korn Shell?
+-history mechanism with built-in editor that simulates emacs or vi
+-built-in integer arithmetic
+-string manipulation capabilities
+-command aliasing
+-arrays
+-job control
+
+
+
+What are some common shells and what are their indicators?
+sh –Bourne shell
+csh –C SHell
+bash –C SHell
+tcsh –enhanced C Shell
+zsh –Z SHell
+ksh –Korn SHell
+
+Differentiate multiuser from multitask.
+Multiuser means that more than one person can use the computer at the same time. Multitask means that even a single user can have the computer work on one task or program at the same time.
+
+What is command substitution?
+Command substitution is one of the steps being performed every time commands are processed by the shell. Commands that are enclosed in backquotes are executed by the shell. This will then replace the standard output of the command and displayed on the command line.
+
+What is a directory?
+Every file is assigned to a directory. A directory is specialized form of a file that maintains a list of all the files in it.
+
+What is inode?
+An inode is an entry created on a section of the disk set aside for a file system. The inode contains nearly all there is to know about a file, which includes the location on the disk where the file starts, the size of the file, when the file was last used, when the file was last changed, what the various read, write, and execute permissions are, who owns the file, and other information.
+
+You have a file called tonky in the directory honky. Later you add new material to tonky. What changes take place in the directory, inode, and file?
+The directory entry is unchanged, since the name and inode numbers remain unchanged. In the inode file, the file size, time of last access, and time of last modification are updated. In the file itself, the new material is added.
+
+Describe the file systems in UNIX.
+Understanding file systems in UNIX has to do with knowing how files and inodes are stored on a system. What happens is that a disk or portion of a disk is set aside to store files and the inode entries. The entire functional unit is referred to as a file system.
+
+Differentiate relative path from absolute path.
+Relative path refers to the path relative to the current path. Absolute path, on the other hand, refers to the exact path as referenced from the root directory.
